@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Teacher's Day</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <!-- Image -->
+            <div class="teacher-image">
+                <span>📚</span>
+                <p>Happy Teacher's Day</p>
+            </div>
+
+            <h1>Happy Teacher's Day</h1>
+
+            <p class="subtitle">
+                A Message of Appreciation and Gratitude
+            </p>
+
+            <div class="line"></div>
+
+            <button id="readButton">
+                Read Message 💌
+            </button>
+
+            <!-- Hidden Message -->
+            <div id="message" class="message">
+
+                <h2>Dear Teachers,</h2>
+
+                <p>
+                    On this special occasion of Teacher's Day, we would like
+                    to express our sincere gratitude and appreciation for
+                    your dedication, patience, and commitment to education.
+                </p>
+
+                <p>
+                    Thank you for sharing your knowledge, guiding us through
+                    our challenges, and encouraging us to continue learning.
+                    Your efforts have made a meaningful difference in our
+                    lives.
+                </p>
+
+                <p>
+                    We deeply appreciate the time, effort, and care you give
+                    to your students. Your guidance and encouragement inspire
+                    us to become responsible, knowledgeable, and better
+                    individuals.
+                </p>
+
+                <p>
+                    May you continue to inspire and touch the lives of many
+                    students through your dedication to teaching.
+                </p>
+
+                <p class="closing">
+                    Happy Teacher's Day! 💜<br>
+                    With sincere gratitude and respect.
+                </p>
+
+            </div>
+
+        </div>
+
+        <p class="footer">
+            Made with appreciation for our wonderful teachers 💜
+        </p>
+
+    </div>
+
+
+    <script>
+
+        const button = document.getElementById("readButton");
+        const message = document.getElementById("message");
+
+        button.addEventListener("click", function() {
+
+            message.classList.toggle("show");
+
+            if (message.classList.contains("show")) {
+                button.textContent = "Message Opened ✓";
+            } else {
+                button.textContent = "Read Message 💌";
+            }
+
+        });
+
+    </script>
+
+</body>
+</html>
